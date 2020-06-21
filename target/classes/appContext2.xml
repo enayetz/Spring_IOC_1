@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="addID" class="com.nt.ioc.Address">
+		<property name="city" value="Kingston" />
+		<property name="state" value="Rhode Island" />
+	</bean>
+
+	<bean id="emp" class="com.nt.ioc.Employee">
+		<property name="id" value="251" />
+		<property name="name" value="Abdullah" />
+		<property name="sal" value="546545" />
+		<property name="adr" ref="addID" />
+
+	</bean>
+
+
+
+</beans>
